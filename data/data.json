@@ -1,0 +1,30 @@
+[
+	{
+		"type": "Condo",
+		"price": "220000",
+		"address": "213 Grove Street",
+		"description": "Excellent place, really nice view!"
+	},
+
+	{
+		"type": "House",
+		"price": "410500",
+		"address": "7823 Winning Way",
+		"description": "Beautiful home wiht lots of space for a large family."
+	},
+
+	{
+		"type": "Duplex",
+		"price": "395000",
+		"address": "834 River Lane",
+		"description": "Great neighborhood and lot's of nice green space."
+	},
+
+	{
+		"type": "Townhouse",
+		"price": "12000",
+		"address": "1742 Sam Rittenberg Blvd",
+		"description": "Avoid living hear at all costs. You will thank me."
+	}
+
+]

@@ -5,11 +5,21 @@
 		<title>ng-cribs</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
-	<body>
-		<h1>Hello World!!!</h1>
-	</body>
+	<body ng-app = "ngCribs" ng-controller = "cribsController">
+		<div class = "well" ng-repeat= "crib in cribs">
+			<h3>{{ crib.address}}</h3>
+			<p><strong>Type: </strong>{{ crib.type }}</p>
+			<p><strong>Description: </strong>{{ crib.description }}</p>
+			<p><strong>Price: </strong>{{ crib.price | currency }}</p>
 
-	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
-	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+		</div>
+			}
+	</body>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+		<script src = "app.js"></script>
+		<script src="scripts/cribsController.js"> </script>
+		<script src="scripts/cribsFactory.js"> </script>
+
 </html>
