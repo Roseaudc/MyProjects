@@ -7,4 +7,8 @@ angular
 		cribsFactory.getCribs().then(function(data) {
 			$scope.cribs = data.data;
 		});
+
+		$scope.sayHello = function() {
+			console.log("Hello");
+		}
 	});
